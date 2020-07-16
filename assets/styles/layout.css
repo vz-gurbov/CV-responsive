@@ -1,0 +1,486 @@
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+main {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+div {
+  padding: 5% 0;
+}
+
+.improvement {
+  width: 40em;
+  margin: 0 auto;
+  position: relative;
+}
+
+.improvement::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #2b2b2b;
+  display: block;
+  position: absolute;
+  left: -7%;
+  z-index: -1;
+}
+
+header {
+  position: relative;
+}
+
+.header__decoration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.header__decoration .header__avatar {
+  border: 4px solid #80ba54;
+  border-radius: 100%;
+  padding: 0px;
+  -webkit-animation: 1.2s ease-out 0s 1 slideInFromLeft;
+          animation: 1.2s ease-out 0s 1 slideInFromLeft;
+}
+
+.header__decoration .header__icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  margin-top: 8%;
+  -webkit-animation: 1.2s ease-in 0s 1 slideInFromRight;
+          animation: 1.2s ease-in 0s 1 slideInFromRight;
+}
+
+.header__decoration::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #2b2b2b;
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 7px;
+  z-index: -1;
+  -webkit-animation: 2s ease-out 0s 1 slideInFromLeft;
+          animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+
+header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #2b2b2b;
+  margin-top: -8%;
+  z-index: -1;
+}
+
+.experience__icon, .information__icon, .education__icon {
+  position: absolute;
+  padding: 15px;
+  border: 4px solid #80ba54;
+  border-radius: 100%;
+  width: 110px;
+  height: 90px;
+}
+
+.experience__icon {
+  background: url("/assets/styles/images/experience-icon.png") 50% 35% no-repeat white;
+  margin-top: 370px;
+}
+
+.information__icon {
+  background: url("/assets/styles/images/identity-icon.png") 50% 50% no-repeat white;
+  margin-top: 620px;
+}
+
+.education__icon {
+  background: url("/assets/styles/images/education-icon.png") 50% 50% no-repeat white;
+  margin-top: 850px;
+}
+
+.experience__heading::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #2b2b2b;
+  z-index: -1;
+  margin: 2% 0 0 -5%;
+  position: absolute;
+}
+
+.experience__heading::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: url("/assets/styles/images/experience-icon-mobile.png") right no-repeat;
+  position: absolute;
+  display: none;
+  margin: -5% 0 0 60%;
+}
+
+.experience__heading--webmaster::after {
+  content: "";
+  width: 100px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  background: url("/assets/styles/images/perfomalis-logo.png") right no-repeat;
+  left: 50%;
+  margin-top: -3%;
+}
+
+.experience::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #2b2b2b;
+  z-index: -1;
+  margin: 10% 0 0 -5%;
+  position: absolute;
+}
+
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.information__heading::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: url("/assets/styles/images/identity-icon-mobile.png") right no-repeat;
+  position: absolute;
+  display: none;
+  margin: -3% 0 0 77%;
+}
+
+.information__location::before, .information__mail::before, .information__contact::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  left: -2%;
+  margin-top: 1%;
+}
+
+.information__location::before {
+  background: url("/assets/styles/images/location-icon.png") no-repeat;
+}
+
+.information__mail::before {
+  background: url("/assets/styles/images/mail-icon.png") no-repeat;
+}
+
+.information__contact::before {
+  background: url("/assets/styles/images/contact-icon.png") no-repeat;
+}
+
+.information::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #2b2b2b;
+  z-index: -1;
+  position: absolute;
+  margin-top: 40%;
+  left: -5%;
+}
+
+.education__heading {
+  margin-top: 2% !important;
+}
+
+.education__heading::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: url("/assets/styles/images/education-icon-mobile.png") right no-repeat;
+  position: absolute;
+  display: none;
+  margin: -4% 70%;
+}
+
+.education__college::before, .education__school::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 60px;
+  position: absolute;
+  background: url("/assets/styles/images/college-icon.png") no-repeat;
+  left: -3%;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .improvement::before {
+    display: none;
+  }
+  .header__title, .header__icon {
+    position: relative;
+    margin-top: 0 !important;
+    top: 120px;
+  }
+  .header__icon {
+    padding-right: 2%;
+  }
+  .information__icon {
+    left: 60%;
+  }
+  .experience__icon, .education__icon {
+    left: 70%;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .improvement::before, .education__icon, .information__icon, .experience__icon, .education__college::before {
+    display: none;
+  }
+  .header__decoration::before {
+    width: 30px;
+  }
+  .header__avatar {
+    margin-left: 2% !important;
+  }
+  .header__icon {
+    position: relative;
+    margin-top: 0 !important;
+    top: 120px;
+    padding-right: 15%;
+  }
+  .improvement {
+    width: 90%;
+    padding: 0 5%;
+  }
+  .experience__heading::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url("/assets/styles/images/experience-icon-mobile.png") right no-repeat;
+    position: absolute;
+    display: block;
+    margin-top: -23px;
+  }
+  .experience__heading--webmaster::after {
+    left: 70%;
+  }
+  .experience__icon, .information__icon, .education__icon {
+    width: 50px;
+    height: 50px;
+    background-color: unset;
+    background-size: 80%;
+    border: none;
+  }
+  .information::after {
+    position: relative;
+    margin-top: 3%;
+  }
+  .information__location, .information__mail, .information__contact {
+    margin-left: 10% !important;
+  }
+  .information__location::before, .information__mail::before, .information__contact::before {
+    left: 5% !important;
+  }
+  .information__heading::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url("/assets/styles/images/identity-icon-mobile.png") right no-repeat;
+    position: absolute;
+    left: 65%;
+    margin-top: -10px;
+  }
+  .education__college, .education__school {
+    margin-left: 0 !important;
+  }
+  .education {
+    padding: 5%;
+    width: 90%;
+  }
+  .education__heading::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url("/assets/styles/images/education-icon-mobile.png") right no-repeat;
+    position: absolute;
+    left: 80%;
+    margin-top: -15px;
+  }
+  .education__college {
+    text-align: center;
+  }
+  .education__school {
+    margin-top: 20% !important;
+    position: relative;
+    text-align: center;
+  }
+  .education__school::before {
+    width: 100px;
+    margin: auto;
+    margin-top: -18%;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main, .skills, .experience, .information::after, .education, .improvement, .information, .location, .mail, .contact {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .header__decoration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 15%;
+  }
+  .header__decoration::before, .information__icon, .improvement::before {
+    display: none;
+  }
+  .header__avatar {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .header__icon {
+    right: unset !important;
+    position: relative !important;
+    width: 25%;
+    margin: 0 auto;
+  }
+  .header__title {
+    text-align: center;
+  }
+  .experience__heading--webmaster::after {
+    position: unset;
+    padding: 10% 0;
+    margin: 0 auto;
+  }
+  .experience {
+    width: 90%;
+  }
+  .experience__heading::after {
+    margin-top: -15%;
+  }
+  .experience__heading--webmaster {
+    font-size: 1.2em;
+    margin-top: 15%;
+  }
+  .experience__description {
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+  .experience__icon, .education__icon, .education__college::before {
+    display: none;
+  }
+  .experience__heading::before, .information__heading::before, .education__heading::before {
+    display: block;
+  }
+  .skills {
+    padding: 10%;
+    width: 80%;
+  }
+  .experience {
+    padding: 5%;
+    line-height: 1.5em !important;
+  }
+  .information {
+    padding: 5%;
+    width: 90%;
+    margin-top: 5%;
+  }
+  .information::after {
+    margin-top: 5%;
+    position: relative;
+  }
+  .information__location, .information__mail, .information__contact {
+    margin-left: 15% !important;
+  }
+  .information__location::before, .information__mail::before, .information__contact::before {
+    margin-left: 5%;
+  }
+  .education__college, .education__school {
+    margin-left: 0 !important;
+  }
+  .education {
+    padding: 5%;
+    width: 90%;
+  }
+  .education__college {
+    text-align: center;
+  }
+  .education__school {
+    margin-top: 20% !important;
+    position: relative;
+    text-align: center;
+  }
+  .education__school::before {
+    width: 100px;
+    margin: auto;
+    margin-top: -22%;
+    left: 0;
+    right: 0;
+  }
+}
+/*# sourceMappingURL=layout.css.map */

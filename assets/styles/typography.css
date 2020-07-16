@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+.header__title {
+  font-family: "Bangers", cursive;
+  font-size: 2.3em;
+  color: #80ba54;
+  margin-top: 10%;
+  margin-left: 3%;
+}
+
+.skills__heading, .experience__heading, .information__heading, .education__heading {
+  font-family: "Bangers", cursive;
+  color: #80ba54;
+  font-size: 1.8em;
+  padding-bottom: 3%;
+}
+
+.skills__list {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.9em;
+  list-style-type: circle;
+  letter-spacing: 1.3px;
+}
+
+.experience__heading--webmaster {
+  margin-top: 5%;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.experience {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.2em;
+}
+
+.experience__description {
+  padding-top: 3%;
+}
+
+.information__heading {
+  margin-top: 5%;
+}
+
+.information__location, .information__mail, .information__contact {
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  line-height: 2.2em;
+  margin-left: 5%;
+}
+
+.education__college, .education__school {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  padding: 2%;
+  margin-left: 15%;
+}
+/*# sourceMappingURL=typography.css.map */
